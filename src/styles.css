@@ -161,6 +161,7 @@ table {
 table {
   margin: 10vw;
   margin-bottom: 0;
+  max-width: 80vw;
 }
 
 td {
@@ -204,11 +205,17 @@ tr td:first-child {
   text-decoration: line-through;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  tr td:first-child {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 0.5em;
+  }
+
   tr td:last-child {
-    display: block;
-    width: 100%;
-    margin-top: 0.5em;
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
   }
 }
 
