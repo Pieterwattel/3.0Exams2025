@@ -104,22 +104,6 @@ document.addEventListener('click', (e) => {
   }
 });
 
-let checkUserAgent = (function () {
-  let isMobileDevice =
-    /android|iphone|ipad|ipod/i.test(navigator.userAgent) &&
-    !/windows|macintosh|linux/i.test(navigator.userAgent);
-
-  let isSmallScreen = window.innerWidth < 1000;
-
-  if (isMobileDevice || isSmallScreen) {
-    document.querySelectorAll('tr').forEach((row) => {
-      row.style.display = 'flex';
-      row.style.flexDirection = 'column';
-      row.style.marginTop = '30px';
-    });
-  }
-})();
-
 console.log("don't look here, this is all working fine, I Promise.");
 
 checkdates();

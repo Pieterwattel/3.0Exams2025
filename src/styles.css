@@ -210,12 +210,18 @@ tr td:first-child {
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0em;
     border-top-right-radius: 0.5em;
+    margin-top: 0.5em;
   }
 
   tr td:last-child {
     border-top-right-radius: 0em;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column !important;
   }
 }
 
