@@ -222,7 +222,7 @@ tr td:first-child {
   backdrop-filter: blur(14px);
   width: calc(35vw + 100px);
   height: fit-content;
-  border: 5px double rgb(249, 255, 218);
+  border: 5px dashed rgb(249, 255, 218);
   box-shadow: 15px 15px 150px rgba(200, 228, 255, 0.4);
   border-radius: 1.5em;
   padding: 3%;
