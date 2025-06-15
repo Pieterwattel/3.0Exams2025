@@ -81,7 +81,8 @@ header * {
   -webkit-text-stroke: 2px rgb(15, 15, 15);
   text-shadow: 1px 1px 0px black, 2px 2px 0px grey, 3px 3px 0px black,
     4px 4px 0px grey, 5px 5px 0px black, 6px 6px 0px grey, 7px 7px 0px black,
-    8px 8px 0px grey, 9px 9px 0px black, 10px 10px 0px grey, 11px 11px 0px black;
+    8px 8px 0px grey, 9px 9px 0px black, 10px 10px 0px grey, 11px 11px 0px black,
+    12px 12px 10px black;
 }
 
 th {
@@ -108,11 +109,11 @@ table {
   font-size: 21px;
   text-align: center;
 
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 13.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 13.1 */
+  animation: fadein 3s;
 }
 
 @keyframes fadein {
