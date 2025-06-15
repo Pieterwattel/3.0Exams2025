@@ -1,6 +1,7 @@
 import './styles.css';
 import { checkdates } from './checkdates';
 import { nodes } from './domNodes';
+import { getUnixTime } from 'date-fns';
 
 const names = [
   ['Noah Claassen'],
@@ -121,13 +122,13 @@ function applyGrowingShadow(node) {
       return;
     }
 
-    const color = i % 2 === 0 ? 'grey' : 'black';
+    const color = i % 2 === 0 ? 'rgb(0, 137, 216)' : 'black';
     const blur = i === max ? '10px' : '0px';
     shadows.push(`${i}px ${i}px ${blur} ${color}`);
     node.style.textShadow = shadows.join(', ');
 
     i++;
-  }, 100);
+  }, 160);
 }
 
 applyGrowingShadow(document.getElementById('header1'));

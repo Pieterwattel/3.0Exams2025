@@ -69,9 +69,12 @@ header {
   margin-top: 100px;
   width: 100%;
 
-  border-top: 5px double rgb(249, 255, 218);
-  border-bottom: 5px double rgb(249, 255, 218);
-  z-index: -2;
+  border-top: 2px dashed rgb(249, 255, 218);
+  border-bottom: 2px dashed rgb(249, 255, 218);
+  z-index: 2;
+
+  position: sticky;
+  top: 0;
 }
 
 header * {
@@ -246,7 +249,6 @@ tr td:first-child {
 
 body {
   animation: background-shift 40s ease-in-out infinite;
-  min-height: 100vh;
 }
 
 @keyframes background-shift {
@@ -264,6 +266,33 @@ body {
   }
   100% {
     background-color: #010046;
+  }
+}
+
+a {
+  color: rgb(93, 135, 190);
+}
+
+header {
+  animation: header-shift 40s ease-in-out infinite;
+  backdrop-filter: blur(4px);
+}
+
+@keyframes header-shift {
+  0% {
+    background-color: #010046be;
+  }
+  25% {
+    background-color: #470000be;
+  }
+  50% {
+    background-color: #002b2ebe;
+  }
+  75% {
+    background-color: #640000be;
+  }
+  100% {
+    background-color: #010046be;
   }
 }
 
