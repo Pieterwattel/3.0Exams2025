@@ -59,7 +59,7 @@ one-sec-shadow-host > * {
 
 * {
   font-family: 'Glofin';
-  font-size: clamp(1.2rem, 1.8vh, 1.8rem);
+  font-size: clamp(1.5rem, 2vh, 2rem);
   color: #45d0da;
 }
 
@@ -76,7 +76,7 @@ header {
 
 header * {
   font-family: 'Glofin';
-  font-size: clamp(3rem, 4vh, 4rem);
+  font-size: clamp(4rem, 5vh, 5rem);
   color: #cccccc;
   text-align: center;
 
@@ -88,7 +88,7 @@ header * {
 
 th {
   font-family: 'neon';
-  font-size: clamp(1.8rem, 2.7vh, 2.7rem);
+  font-size: clamp(2rem, 2.8vh, 2.8rem);
   color: rgb(255, 255, 255);
   text-shadow: 0 0 5px rgb(231, 255, 97);
   font-weight: 500;
