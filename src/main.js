@@ -107,3 +107,27 @@ document.addEventListener('click', (e) => {
 console.log("don't look here, this is all working fine, I Promise.");
 
 checkdates();
+
+function applyGrowingShadow(node) {
+  let i = 1;
+  const max = 15;
+  const stroke = '-webkit-text-stroke: 2px rgb(15, 15, 15);';
+  node.style.webkitTextStroke = '2px rgb(15, 15, 15)';
+  let shadows = [];
+
+  const interval = setInterval(() => {
+    if (i > max) {
+      clearInterval(interval);
+      return;
+    }
+
+    const color = i % 2 === 0 ? 'grey' : 'black';
+    const blur = i === max ? '10px' : '0px';
+    shadows.push(`${i}px ${i}px ${blur} ${color}`);
+    node.style.textShadow = shadows.join(', ');
+    i++;
+  }, 400);
+}
+
+applyGrowingShadow(document.getElementById('header1'));
+applyGrowingShadow(document.getElementById('header2'));
