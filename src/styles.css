@@ -72,9 +72,6 @@ header {
   border-top: 2px dashed rgb(249, 255, 218);
   border-bottom: 2px dashed rgb(249, 255, 218);
   z-index: 2;
-
-  position: sticky;
-  top: 0;
 }
 
 header * {
@@ -82,7 +79,11 @@ header * {
   font-size: clamp(3rem, 4vh, 4rem);
   color: #cccccc;
   text-align: center;
-  -webkit-text-stroke: 2px rgb(15, 15, 15);
+
+  text-shadow: 1px 1px 0 black, 2px 2px 0 rgb(0, 137, 216), 3px 3px 0 black,
+    4px 4px 0 rgb(0, 137, 216), 5px 5px 0 black, 6px 6px 0 rgb(0, 137, 216),
+    7px 7px 0 black, 8px 8px 0 rgb(0, 137, 216), 9px 9px 0 black,
+    10px 10px 10px rgb(0, 0, 0);
 }
 
 th {
@@ -266,33 +267,6 @@ body {
   }
   100% {
     background-color: #010046;
-  }
-}
-
-a {
-  color: rgb(93, 135, 190);
-}
-
-header {
-  animation: header-shift 40s ease-in-out infinite;
-  backdrop-filter: blur(4px);
-}
-
-@keyframes header-shift {
-  0% {
-    background-color: #010046be;
-  }
-  25% {
-    background-color: #470000be;
-  }
-  50% {
-    background-color: #002b2ebe;
-  }
-  75% {
-    background-color: #640000be;
-  }
-  100% {
-    background-color: #010046be;
   }
 }
 
