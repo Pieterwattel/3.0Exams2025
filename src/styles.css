@@ -76,9 +76,10 @@ header {
 header * {
   font-family: 'Glofin';
   font-size: clamp(3rem, 4vh, 4rem);
-  text-shadow: 0 0 10px rgb(231, 255, 97);
-  color: #fafafa;
+  text-shadow: 0 0 4px rgb(231, 255, 97);
+  color: #cccccc;
   text-align: center;
+  -webkit-text-stroke: 1.5px rgb(36, 36, 36);
 }
 
 th {
@@ -232,7 +233,7 @@ tr td:first-child {
   left: 50%; /* 50% across */
   transform: translate(-50%, -50%); /* shift back by half its own size */
   background-color: rgba(21, 0, 61, 0.7);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(6px);
   width: calc(35vw + 100px);
   height: fit-content;
   border: 5px dashed rgb(249, 255, 218);
@@ -253,7 +254,7 @@ body {
     background-color: #010046;
   }
   25% {
-    background-color: #3d0000;
+    background-color: #470000;
   }
   50% {
     background-color: #002b2e;
