@@ -110,7 +110,7 @@ checkdates();
 
 function applyGrowingShadow(node) {
   let i = 1;
-  const max = 15;
+  const max = 25;
   const stroke = '-webkit-text-stroke: 2px rgb(15, 15, 15);';
   node.style.webkitTextStroke = '2px rgb(15, 15, 15)';
   let shadows = [];
@@ -125,8 +125,9 @@ function applyGrowingShadow(node) {
     const blur = i === max ? '10px' : '0px';
     shadows.push(`${i}px ${i}px ${blur} ${color}`);
     node.style.textShadow = shadows.join(', ');
+
     i++;
-  }, 400);
+  }, 80);
 }
 
 applyGrowingShadow(document.getElementById('header1'));
