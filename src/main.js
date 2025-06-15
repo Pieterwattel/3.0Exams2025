@@ -80,7 +80,7 @@ nodes.allNameNodes.forEach((node) => {
         popup = document.createElement('div');
         popup.id = 'popupscreen';
         document.body.appendChild(popup);
-        node.style.backgroundColor = 'rgba(21, 0, 61, 1)';
+        node.style.backgroundColor = 'rgb(27, 0, 49)';
         node.style.color = 'white';
         node.style.textShadow = '0 0 20px rgb(231, 255, 97)';
         highlightedNode = node;

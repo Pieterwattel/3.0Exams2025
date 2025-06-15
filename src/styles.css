@@ -59,7 +59,7 @@ one-sec-shadow-host > * {
 
 * {
   font-family: 'Glofin';
-  font-size: clamp(1.4rem, 2.5vh, 2.5rem);
+  font-size: clamp(1.2rem, 1.8vh, 1.8rem);
   color: #45d0da;
 }
 
@@ -199,11 +199,11 @@ tr td:first-child + td + td {
 }
 
 tr td:first-child + td {
-  background-color: rgba(97, 0, 177, 0.2);
+  background-color: rgba(184, 0, 123, 0.2);
 }
 
 tr td:first-child {
-  background-color: rgba(184, 0, 123, 0.2);
+  background-color: rgba(97, 0, 177, 0.2);
 }
 
 .passed {
@@ -268,6 +268,10 @@ body {
   100% {
     background-color: #010046;
   }
+}
+
+a {
+  color: rgb(93, 135, 190);
 }
 
 a {
