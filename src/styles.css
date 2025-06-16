@@ -76,7 +76,7 @@ header {
 
 header * {
   font-family: 'Glofin';
-  font-size: clamp(4rem, 5vh, 5rem);
+  font-size: clamp(3.5rem, 4vh, 4rem);
   color: #cccccc;
   text-align: center;
 

@@ -12,6 +12,10 @@ const checkdates = function () {
     const rawDate = dateCell.textContent;
     const parsedDate = parse(rawDate, 'dd-MM-yyyy', new Date());
 
+    if (isEqual(endOfDay(parsedDate), endOfDay(today))) {
+      dateCell.textContent = '- TODAY -';
+    }
+
     if (
       isBefore(parsedDate, today) &&
       !isEqual(endOfDay(parsedDate), endOfDay(today))
