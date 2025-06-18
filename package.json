@@ -13,7 +13,8 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "pageUpdate": "cd docs/ && rm * && cd ../dist && cp * ../docs && cd .. && git push"
   },
   "prettier": {
     "semi": true,
