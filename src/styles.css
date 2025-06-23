@@ -77,8 +77,7 @@ header {
   top: 0;
 
   background-blend-mode: saturation;
-  backdrop-filter: blur(10px);
-  animation: background-shift2 40s ease-in-out infinite;
+  animation: background-shift 40s ease-in-out infinite;
 }
 
 header * {
@@ -274,24 +273,6 @@ body {
   }
   100% {
     background-color: #000a42;
-  }
-}
-
-@keyframes background-shift2 {
-  0% {
-    background-color: #000a42d5;
-  }
-  25% {
-    background-color: #360000d5;
-  }
-  50% {
-    background-color: #2c0046d5;
-  }
-  75% {
-    background-color: #002929d5;
-  }
-  100% {
-    background-color: #000a42d5;
   }
 }
 
