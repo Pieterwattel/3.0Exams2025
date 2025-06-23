@@ -79,6 +79,11 @@ header * {
   font-size: clamp(3rem, 3.5vh, 3.5rem);
   color: #cccccc;
   text-align: center;
+
+  text-shadow: 1px 1px 0 black, 2px 2px 0 rgb(0, 137, 216), 3px 3px 0 black,
+    4px 4px 0 rgb(0, 137, 216), 5px 5px 0 black, 6px 6px 0 rgb(0, 137, 216),
+    7px 7px 0 black, 8px 8px 0 rgb(0, 137, 216), 9px 9px 0 black,
+    10px 10px 10px rgb(0, 0, 0);
 }
 
 th {
