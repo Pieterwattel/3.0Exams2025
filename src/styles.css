@@ -127,11 +127,13 @@ th {
 
 body {
   display: flex;
+  flex-direction: column;
+
   align-content: center;
+  justify-content: center;
 
   background-color: rgb(12, 66, 59);
   display: flex;
-  flex-direction: column;
   padding-bottom: 5vw;
   border: 1px transparent black;
 }
@@ -140,6 +142,13 @@ table {
   margin-top: 25px;
   font-size: 21px;
   text-align: center;
+
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 13.1 */
   -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -237,27 +246,27 @@ tr td:first-child {
   background-color: rgba(97, 0, 177, 0.2);
 }
 
-.passed {
+.passedExams {
+  align-self: center;
+  justify-self: center;
 }
 
-@media (max-width: 1000px) {
-  tr td:first-child {
-    border-top-left-radius: 0.5em;
-    border-bottom-left-radius: 0em;
-    border-top-right-radius: 0.5em;
-    margin-top: 0.5em;
-  }
+tr td:first-child {
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0em;
+  border-top-right-radius: 0.5em;
+  margin-top: 0.5em;
+}
 
-  tr td:last-child {
-    border-top-right-radius: 0em;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-  }
+tr td:last-child {
+  border-top-right-radius: 0em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
 
-  tr {
-    display: flex;
-    flex-direction: column !important;
-  }
+tr {
+  display: flex;
+  flex-direction: column !important;
 }
 
 #popupscreen {
